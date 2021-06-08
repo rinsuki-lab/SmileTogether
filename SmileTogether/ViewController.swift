@@ -120,7 +120,13 @@ class ViewController: NSViewController {
         }
     }
     
+    var playingNow: String = ""
+    
     func play(videoID: String) async throws {
+        if playingNow == videoID {
+            return
+        }
+        playingNow = videoID
         var watchAPIURL = URLComponents(string: "https://www.nicovideo.jp/api/watch/v3_guest/\(videoID)")!
         watchAPIURL.queryItems = [
             .init(name: "_frontendId", value: "6"),
