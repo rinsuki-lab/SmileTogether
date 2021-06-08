@@ -10,6 +10,7 @@ import AVKit
 import SwiftyJSON
 import GroupActivities
 import Combine
+import Regex
 
 func generateActionTrackID() -> String {
     var str = ""
@@ -82,7 +83,17 @@ class ViewController: NSViewController {
     }
 
     @IBAction func play(_ sender: Any) {
-        let videoID = videoUrlField.stringValue
+        let includingVideoID = videoUrlField.stringValue
+        guard
+            let videoID = try? Regex(string: "((so|sm|nm)[0-9]+)").firstMatch(in: includingVideoID)?.captures.first,
+            let videoID = videoID
+        else {
+            let alert = NSAlert()
+            alert.informativeText = "Failed to find video id from input URL"
+            alert.runModal()
+            return
+        }
+        print(videoID)
         async {
             let activity = NicoVideoWatchingActivity(videoID: videoID)
             switch await activity.prepareForActivation() {

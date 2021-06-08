@@ -15,6 +15,7 @@
 		CE32F7F8266FF77800CC41A6 /* SmileTogetherUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE32F7F7266FF77800CC41A6 /* SmileTogetherUITests.swift */; };
 		CE32F808266FFB1C00CC41A6 /* SwiftyJSON in Frameworks */ = {isa = PBXBuildFile; productRef = CE32F807266FFB1C00CC41A6 /* SwiftyJSON */; };
 		CE32F80E2670119B00CC41A6 /* NicoUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE32F80D2670119B00CC41A6 /* NicoUtils.swift */; };
+		CE32F8112670199E00CC41A6 /* Regex in Frameworks */ = {isa = PBXBuildFile; productRef = CE32F8102670199E00CC41A6 /* Regex */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE32F8112670199E00CC41A6 /* Regex in Frameworks */,
 				CE32F808266FFB1C00CC41A6 /* SwiftyJSON in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -149,6 +151,7 @@
 			name = SmileTogether;
 			packageProductDependencies = (
 				CE32F807266FFB1C00CC41A6 /* SwiftyJSON */,
+				CE32F8102670199E00CC41A6 /* Regex */,
 			);
 			productName = SmileTogether;
 			productReference = CE32F7D9266FF77600CC41A6 /* SmileTogether.app */;
@@ -224,6 +227,7 @@
 			mainGroup = CE32F7D0266FF77600CC41A6;
 			packageReferences = (
 				CE32F804266FFA5400CC41A6 /* XCRemoteSwiftPackageReference "SwiftyJSON" */,
+				CE32F80F2670199E00CC41A6 /* XCRemoteSwiftPackageReference "Regex" */,
 			);
 			productRefGroup = CE32F7DA266FF77600CC41A6 /* Products */;
 			projectDirPath = "";
@@ -641,6 +645,14 @@
 				minimumVersion = 5.0.0;
 			};
 		};
+		CE32F80F2670199E00CC41A6 /* XCRemoteSwiftPackageReference "Regex" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/sharplet/Regex";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.1.1;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -648,6 +660,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = CE32F804266FFA5400CC41A6 /* XCRemoteSwiftPackageReference "SwiftyJSON" */;
 			productName = SwiftyJSON;
+		};
+		CE32F8102670199E00CC41A6 /* Regex */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CE32F80F2670199E00CC41A6 /* XCRemoteSwiftPackageReference "Regex" */;
+			productName = Regex;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
