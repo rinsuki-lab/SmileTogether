@@ -731,7 +731,7 @@ DQ
                                     <action selector="play:" target="XfG-lQ-9wD" id="mcl-qL-sL1"/>
                                 </connections>
                             </button>
-                            <avPlayerView controlsStyle="inline" translatesAutoresizingMaskIntoConstraints="NO" id="pXh-eO-hsz">
+                            <avPlayerView controlsStyle="inline" translatesAutoresizingMaskIntoConstraints="NO" id="pXh-eO-hsz" customClass="SubclassedAVPlayerView" customModule="SmileTogether" customModuleProvider="target">
                                 <rect key="frame" x="20" y="20" width="440" height="201"/>
                             </avPlayerView>
                         </subviews>

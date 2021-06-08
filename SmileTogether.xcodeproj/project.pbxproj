@@ -16,6 +16,7 @@
 		CE32F808266FFB1C00CC41A6 /* SwiftyJSON in Frameworks */ = {isa = PBXBuildFile; productRef = CE32F807266FFB1C00CC41A6 /* SwiftyJSON */; };
 		CE32F80E2670119B00CC41A6 /* NicoUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE32F80D2670119B00CC41A6 /* NicoUtils.swift */; };
 		CE32F8112670199E00CC41A6 /* Regex in Frameworks */ = {isa = PBXBuildFile; productRef = CE32F8102670199E00CC41A6 /* Regex */; };
+		CE32F8172670213E00CC41A6 /* SubclassedAVPlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE32F8162670213E00CC41A6 /* SubclassedAVPlayerView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		CE32F7F7266FF77800CC41A6 /* SmileTogetherUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmileTogetherUITests.swift; sourceTree = "<group>"; };
 		CE32F80C266FFFA100CC41A6 /* SmileTogether.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SmileTogether.entitlements; sourceTree = "<group>"; };
 		CE32F80D2670119B00CC41A6 /* NicoUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NicoUtils.swift; sourceTree = "<group>"; };
+		CE32F8162670213E00CC41A6 /* SubclassedAVPlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubclassedAVPlayerView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 				CE32F80C266FFFA100CC41A6 /* SmileTogether.entitlements */,
 				CE32F7DC266FF77600CC41A6 /* AppDelegate.swift */,
 				CE32F7DE266FF77600CC41A6 /* ViewController.swift */,
+				CE32F8162670213E00CC41A6 /* SubclassedAVPlayerView.swift */,
 				CE32F7E0266FF77700CC41A6 /* Assets.xcassets */,
 				CE32F7E2266FF77700CC41A6 /* Main.storyboard */,
 				CE32F80D2670119B00CC41A6 /* NicoUtils.swift */,
@@ -274,6 +277,7 @@
 				CE32F80E2670119B00CC41A6 /* NicoUtils.swift in Sources */,
 				CE32F7DF266FF77600CC41A6 /* ViewController.swift in Sources */,
 				CE32F7DD266FF77600CC41A6 /* AppDelegate.swift in Sources */,
+				CE32F8172670213E00CC41A6 /* SubclassedAVPlayerView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
