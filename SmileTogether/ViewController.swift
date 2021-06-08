@@ -159,7 +159,7 @@ class ViewController: NSViewController {
             let heartbeatData = try dmcResponse["data"].rawData()
             self.heartbeatInfo = asyncDetached(priority: .background) {
                 while true {
-                    let lifeTime = UInt32(heartbeatLifetime) / 2
+                    let lifeTime = UInt32(heartbeatLifetime) / 2 / 1000
                     print(lifeTime)
                     // ref. https://twitter.com/dgregor79/status/1402295472354562048
                     // TODO: use Task.sleep after apple drops next beta
