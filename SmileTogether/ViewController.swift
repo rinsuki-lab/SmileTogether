@@ -8,6 +8,8 @@
 import Cocoa
 import AVKit
 import SwiftyJSON
+import GroupActivities
+import Combine
 
 func generateActionTrackID() -> String {
     var str = ""
@@ -17,6 +19,18 @@ func generateActionTrackID() -> String {
     }
     str += "_\(Int(Date().timeIntervalSince1970 * 1000))"
     return str
+}
+
+struct NicoVideoWatchingActivity: GroupActivity {
+    var videoID: String
+    
+    var metadata: GroupActivityMetadata {
+        var meta = GroupActivityMetadata()
+        meta.type = .watchTogether
+        meta.title = videoID
+        meta.fallbackURL = URL(string: "https://www.nicovideo.jp/watch/\(videoID)")
+        return meta
+    }
 }
 
 class ViewController: NSViewController {
@@ -30,27 +44,67 @@ class ViewController: NSViewController {
             }
         }
     }
+    var groupSession: GroupSession<NicoVideoWatchingActivity>? {
+        didSet {
+            guard let session = groupSession else {
+                player.rate = 0
+                return
+            }
+            player.playbackCoordinator.coordinateWithSession(session)
+        }
+    }
+    var subscriptions = Set<AnyCancellable>()
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
         playerView.player = player
-    }
-
-    override var representedObject: Any? {
-        didSet {
-        // Update the view, if already loaded.
+        
+        async {
+            for await groupSession in NicoVideoWatchingActivity.sessions() {
+                self.groupSession = groupSession
+                subscriptions.removeAll()
+                groupSession.$state.sink { [weak self] state in
+                    if case .invalidated = state {
+                        self?.groupSession = nil
+                        self?.subscriptions.removeAll()
+                    }
+                    print(state)
+                }.store(in: &subscriptions)
+                
+                groupSession.join()
+                groupSession.$activity.sink { [weak self] activity in
+                    self?.playBackground(videoID: activity.videoID)
+                }.store(in: &subscriptions)
+            }
         }
     }
 
     @IBAction func play(_ sender: Any) {
         let videoID = videoUrlField.stringValue
         async {
+            let activity = NicoVideoWatchingActivity(videoID: videoID)
+            switch await activity.prepareForActivation() {
+            case .activationDisabled:
+                playBackground(videoID: videoID)
+            case .activationPreferred:
+                activity.activate()
+            case .cancelled:
+                // nothing
+                break
+            }
+        }
+    }
+    
+    func playBackground(videoID: String) {
+        async {
             do {
                 try await play(videoID: videoID)
             } catch {
-                print(error)
+                let alert = NSAlert()
+                alert.informativeText = "play failed"
+                alert.messageText = "\(error)"
             }
         }
     }
