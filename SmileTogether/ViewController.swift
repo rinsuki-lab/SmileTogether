@@ -153,8 +153,9 @@ class ViewController: NSViewController {
         print(dmcResponse)
         if let url = dmcResponse["data"]["session"]["content_uri"].url {
             let playerItem = AVPlayerItem(url: url)
-            self.player.replaceCurrentItem(with: playerItem)
-            self.player.play()
+            DispatchQueue.main.async {
+                self.player.replaceCurrentItem(with: playerItem)
+            }
             let heartbeatLifetime = dmcInfo["movie"]["session"]["heartbeatLifetime"].intValue
             let heartbeatData = try dmcResponse["data"].rawData()
             self.heartbeatInfo = asyncDetached(priority: .background) {
