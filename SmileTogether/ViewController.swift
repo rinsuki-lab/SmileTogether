@@ -151,13 +151,13 @@ class ViewController: NSViewController {
             self.player.play()
             let heartbeatLifetime = dmcInfo["movie"]["session"]["heartbeatLifetime"].intValue
             let heartbeatData = try dmcResponse["data"].rawData()
-            self.heartbeatInfo = async {
+            self.heartbeatInfo = asyncDetached(priority: .background) {
                 while true {
-                    let lifeTime = UInt64(heartbeatLifetime) * 500 * 1000
+                    let lifeTime = UInt32(heartbeatLifetime) / 2
                     print(lifeTime)
                     // ref. https://twitter.com/dgregor79/status/1402295472354562048
-                    // TODO: remove after apple drops next beta?
-                    await Task.sleep(lifeTime)
+                    // TODO: use Task.sleep after apple drops next beta
+                    sleep(lifeTime)
                     print("checking...")
                     try Task.checkCancellation()
                     var req = URLRequest(url: URL(string: "https://api.dmc.nico/api/sessions/\(dmcResponse["data"]["session"]["id"].stringValue)?_format=json&_method=PUT")!)
