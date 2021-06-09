@@ -63,4 +63,14 @@ enum NicoUtils {
         ]
         return try JSONSerialization.data(withJSONObject: api, options: .prettyPrinted)
     }
+    
+    static func generateActionTrackID() -> String {
+        var str = ""
+        let rnd = "1234567890ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz"
+        for _ in 0..<10 {
+            str += String(rnd.randomElement()!)
+        }
+        str += "_\(Int(Date().timeIntervalSince1970 * 1000))"
+        return str
+    }
 }

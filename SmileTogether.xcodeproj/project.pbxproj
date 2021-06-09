@@ -17,6 +17,23 @@
 		CE32F80E2670119B00CC41A6 /* NicoUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE32F80D2670119B00CC41A6 /* NicoUtils.swift */; };
 		CE32F8112670199E00CC41A6 /* Regex in Frameworks */ = {isa = PBXBuildFile; productRef = CE32F8102670199E00CC41A6 /* Regex */; };
 		CE32F8172670213E00CC41A6 /* SubclassedAVPlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE32F8162670213E00CC41A6 /* SubclassedAVPlayerView.swift */; };
+		CE32F81F2670319300CC41A6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE32F81E2670319300CC41A6 /* AppDelegate.swift */; };
+		CE32F8212670319300CC41A6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE32F8202670319300CC41A6 /* SceneDelegate.swift */; };
+		CE32F8232670319300CC41A6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE32F8222670319300CC41A6 /* ViewController.swift */; };
+		CE32F8262670319300CC41A6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE32F8242670319300CC41A6 /* Main.storyboard */; };
+		CE32F8282670319400CC41A6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE32F8272670319400CC41A6 /* Assets.xcassets */; };
+		CE32F82B2670319400CC41A6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE32F8292670319400CC41A6 /* LaunchScreen.storyboard */; };
+		CE32F8362670319400CC41A6 /* SmileTogetherMobileTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE32F8352670319400CC41A6 /* SmileTogetherMobileTests.swift */; };
+		CE32F8402670319500CC41A6 /* SmileTogetherMobileUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE32F83F2670319500CC41A6 /* SmileTogetherMobileUITests.swift */; };
+		CE32F84C2670325C00CC41A6 /* SubclassedAVPlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE32F84B2670325C00CC41A6 /* SubclassedAVPlayerViewController.swift */; };
+		CE32F84D267032AD00CC41A6 /* NicoUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE32F80D2670119B00CC41A6 /* NicoUtils.swift */; };
+		CE32F84F267032DD00CC41A6 /* NicoVideoWatchingActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE32F84E267032DD00CC41A6 /* NicoVideoWatchingActivity.swift */; };
+		CE32F850267032DF00CC41A6 /* NicoVideoWatchingActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE32F84E267032DD00CC41A6 /* NicoVideoWatchingActivity.swift */; };
+		CE32F8522670330700CC41A6 /* VCProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE32F8512670330700CC41A6 /* VCProtocol.swift */; };
+		CE32F8532670332700CC41A6 /* VCProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE32F8512670330700CC41A6 /* VCProtocol.swift */; };
+		CE32F8552670333E00CC41A6 /* SwiftyJSON in Frameworks */ = {isa = PBXBuildFile; productRef = CE32F8542670333E00CC41A6 /* SwiftyJSON */; };
+		CE431D602670400600569539 /* MovieRedirector.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE431D5F2670400600569539 /* MovieRedirector.swift */; };
+		CE431D612670400600569539 /* MovieRedirector.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE431D5F2670400600569539 /* MovieRedirector.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +51,20 @@
 			remoteGlobalIDString = CE32F7D8266FF77600CC41A6;
 			remoteInfo = SmileTogether;
 		};
+		CE32F8322670319400CC41A6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CE32F7D1266FF77600CC41A6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CE32F81B2670319300CC41A6;
+			remoteInfo = SmileTogetherMobile;
+		};
+		CE32F83C2670319500CC41A6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CE32F7D1266FF77600CC41A6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CE32F81B2670319300CC41A6;
+			remoteInfo = SmileTogetherMobile;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
@@ -49,6 +80,23 @@
 		CE32F80C266FFFA100CC41A6 /* SmileTogether.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SmileTogether.entitlements; sourceTree = "<group>"; };
 		CE32F80D2670119B00CC41A6 /* NicoUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NicoUtils.swift; sourceTree = "<group>"; };
 		CE32F8162670213E00CC41A6 /* SubclassedAVPlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubclassedAVPlayerView.swift; sourceTree = "<group>"; };
+		CE32F81C2670319300CC41A6 /* SmileTogetherMobile.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SmileTogetherMobile.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE32F81E2670319300CC41A6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CE32F8202670319300CC41A6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		CE32F8222670319300CC41A6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		CE32F8252670319300CC41A6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CE32F8272670319400CC41A6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CE32F82A2670319400CC41A6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CE32F82C2670319400CC41A6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE32F8312670319400CC41A6 /* SmileTogetherMobileTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SmileTogetherMobileTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE32F8352670319400CC41A6 /* SmileTogetherMobileTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmileTogetherMobileTests.swift; sourceTree = "<group>"; };
+		CE32F83B2670319500CC41A6 /* SmileTogetherMobileUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SmileTogetherMobileUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE32F83F2670319500CC41A6 /* SmileTogetherMobileUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmileTogetherMobileUITests.swift; sourceTree = "<group>"; };
+		CE32F84B2670325C00CC41A6 /* SubclassedAVPlayerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubclassedAVPlayerViewController.swift; sourceTree = "<group>"; };
+		CE32F84E267032DD00CC41A6 /* NicoVideoWatchingActivity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NicoVideoWatchingActivity.swift; sourceTree = "<group>"; };
+		CE32F8512670330700CC41A6 /* VCProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VCProtocol.swift; sourceTree = "<group>"; };
+		CE431D5F2670400600569539 /* MovieRedirector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieRedirector.swift; sourceTree = "<group>"; };
+		CEAF84912670362C00436EA3 /* SmileTogetherMobile.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SmileTogetherMobile.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,15 +123,41 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		CE32F8192670319300CC41A6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE32F8552670333E00CC41A6 /* SwiftyJSON in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE32F82E2670319400CC41A6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE32F8382670319500CC41A6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		CE32F7D0266FF77600CC41A6 = {
 			isa = PBXGroup;
 			children = (
+				CE32F84A267031A600CC41A6 /* Core */,
 				CE32F7DB266FF77600CC41A6 /* SmileTogether */,
 				CE32F7EC266FF77800CC41A6 /* SmileTogetherTests */,
 				CE32F7F6266FF77800CC41A6 /* SmileTogetherUITests */,
+				CE32F81D2670319300CC41A6 /* SmileTogetherMobile */,
+				CE32F8342670319400CC41A6 /* SmileTogetherMobileTests */,
+				CE32F83E2670319500CC41A6 /* SmileTogetherMobileUITests */,
 				CE32F7DA266FF77600CC41A6 /* Products */,
 				CE32F806266FFB1C00CC41A6 /* Frameworks */,
 			);
@@ -95,6 +169,9 @@
 				CE32F7D9266FF77600CC41A6 /* SmileTogether.app */,
 				CE32F7E9266FF77800CC41A6 /* SmileTogetherTests.xctest */,
 				CE32F7F3266FF77800CC41A6 /* SmileTogetherUITests.xctest */,
+				CE32F81C2670319300CC41A6 /* SmileTogetherMobile.app */,
+				CE32F8312670319400CC41A6 /* SmileTogetherMobileTests.xctest */,
+				CE32F83B2670319500CC41A6 /* SmileTogetherMobileUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -108,7 +185,6 @@
 				CE32F8162670213E00CC41A6 /* SubclassedAVPlayerView.swift */,
 				CE32F7E0266FF77700CC41A6 /* Assets.xcassets */,
 				CE32F7E2266FF77700CC41A6 /* Main.storyboard */,
-				CE32F80D2670119B00CC41A6 /* NicoUtils.swift */,
 			);
 			path = SmileTogether;
 			sourceTree = "<group>";
@@ -134,6 +210,49 @@
 			children = (
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CE32F81D2670319300CC41A6 /* SmileTogetherMobile */ = {
+			isa = PBXGroup;
+			children = (
+				CEAF84912670362C00436EA3 /* SmileTogetherMobile.entitlements */,
+				CE32F81E2670319300CC41A6 /* AppDelegate.swift */,
+				CE32F8202670319300CC41A6 /* SceneDelegate.swift */,
+				CE32F8222670319300CC41A6 /* ViewController.swift */,
+				CE32F84B2670325C00CC41A6 /* SubclassedAVPlayerViewController.swift */,
+				CE32F8242670319300CC41A6 /* Main.storyboard */,
+				CE32F8272670319400CC41A6 /* Assets.xcassets */,
+				CE32F8292670319400CC41A6 /* LaunchScreen.storyboard */,
+				CE32F82C2670319400CC41A6 /* Info.plist */,
+			);
+			path = SmileTogetherMobile;
+			sourceTree = "<group>";
+		};
+		CE32F8342670319400CC41A6 /* SmileTogetherMobileTests */ = {
+			isa = PBXGroup;
+			children = (
+				CE32F8352670319400CC41A6 /* SmileTogetherMobileTests.swift */,
+			);
+			path = SmileTogetherMobileTests;
+			sourceTree = "<group>";
+		};
+		CE32F83E2670319500CC41A6 /* SmileTogetherMobileUITests */ = {
+			isa = PBXGroup;
+			children = (
+				CE32F83F2670319500CC41A6 /* SmileTogetherMobileUITests.swift */,
+			);
+			path = SmileTogetherMobileUITests;
+			sourceTree = "<group>";
+		};
+		CE32F84A267031A600CC41A6 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				CE32F80D2670119B00CC41A6 /* NicoUtils.swift */,
+				CE32F84E267032DD00CC41A6 /* NicoVideoWatchingActivity.swift */,
+				CE32F8512670330700CC41A6 /* VCProtocol.swift */,
+				CE431D5F2670400600569539 /* MovieRedirector.swift */,
+			);
+			path = Core;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -196,6 +315,62 @@
 			productReference = CE32F7F3266FF77800CC41A6 /* SmileTogetherUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		CE32F81B2670319300CC41A6 /* SmileTogetherMobile */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CE32F8412670319500CC41A6 /* Build configuration list for PBXNativeTarget "SmileTogetherMobile" */;
+			buildPhases = (
+				CE32F8182670319300CC41A6 /* Sources */,
+				CE32F8192670319300CC41A6 /* Frameworks */,
+				CE32F81A2670319300CC41A6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SmileTogetherMobile;
+			packageProductDependencies = (
+				CE32F8542670333E00CC41A6 /* SwiftyJSON */,
+			);
+			productName = SmileTogetherMobile;
+			productReference = CE32F81C2670319300CC41A6 /* SmileTogetherMobile.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CE32F8302670319400CC41A6 /* SmileTogetherMobileTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CE32F8442670319500CC41A6 /* Build configuration list for PBXNativeTarget "SmileTogetherMobileTests" */;
+			buildPhases = (
+				CE32F82D2670319400CC41A6 /* Sources */,
+				CE32F82E2670319400CC41A6 /* Frameworks */,
+				CE32F82F2670319400CC41A6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CE32F8332670319400CC41A6 /* PBXTargetDependency */,
+			);
+			name = SmileTogetherMobileTests;
+			productName = SmileTogetherMobileTests;
+			productReference = CE32F8312670319400CC41A6 /* SmileTogetherMobileTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		CE32F83A2670319500CC41A6 /* SmileTogetherMobileUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CE32F8472670319500CC41A6 /* Build configuration list for PBXNativeTarget "SmileTogetherMobileUITests" */;
+			buildPhases = (
+				CE32F8372670319500CC41A6 /* Sources */,
+				CE32F8382670319500CC41A6 /* Frameworks */,
+				CE32F8392670319500CC41A6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CE32F83D2670319500CC41A6 /* PBXTargetDependency */,
+			);
+			name = SmileTogetherMobileUITests;
+			productName = SmileTogetherMobileUITests;
+			productReference = CE32F83B2670319500CC41A6 /* SmileTogetherMobileUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -216,6 +391,17 @@
 					CE32F7F2266FF77800CC41A6 = {
 						CreatedOnToolsVersion = 13.0;
 						TestTargetID = CE32F7D8266FF77600CC41A6;
+					};
+					CE32F81B2670319300CC41A6 = {
+						CreatedOnToolsVersion = 13.0;
+					};
+					CE32F8302670319400CC41A6 = {
+						CreatedOnToolsVersion = 13.0;
+						TestTargetID = CE32F81B2670319300CC41A6;
+					};
+					CE32F83A2670319500CC41A6 = {
+						CreatedOnToolsVersion = 13.0;
+						TestTargetID = CE32F81B2670319300CC41A6;
 					};
 				};
 			};
@@ -239,6 +425,9 @@
 				CE32F7D8266FF77600CC41A6 /* SmileTogether */,
 				CE32F7E8266FF77800CC41A6 /* SmileTogetherTests */,
 				CE32F7F2266FF77800CC41A6 /* SmileTogetherUITests */,
+				CE32F81B2670319300CC41A6 /* SmileTogetherMobile */,
+				CE32F8302670319400CC41A6 /* SmileTogetherMobileTests */,
+				CE32F83A2670319500CC41A6 /* SmileTogetherMobileUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -267,6 +456,30 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		CE32F81A2670319300CC41A6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE32F82B2670319400CC41A6 /* LaunchScreen.storyboard in Resources */,
+				CE32F8282670319400CC41A6 /* Assets.xcassets in Resources */,
+				CE32F8262670319300CC41A6 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE32F82F2670319400CC41A6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE32F8392670319500CC41A6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -274,6 +487,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE32F8532670332700CC41A6 /* VCProtocol.swift in Sources */,
+				CE431D602670400600569539 /* MovieRedirector.swift in Sources */,
+				CE32F850267032DF00CC41A6 /* NicoVideoWatchingActivity.swift in Sources */,
 				CE32F80E2670119B00CC41A6 /* NicoUtils.swift in Sources */,
 				CE32F7DF266FF77600CC41A6 /* ViewController.swift in Sources */,
 				CE32F7DD266FF77600CC41A6 /* AppDelegate.swift in Sources */,
@@ -297,6 +513,37 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		CE32F8182670319300CC41A6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE32F8232670319300CC41A6 /* ViewController.swift in Sources */,
+				CE32F84C2670325C00CC41A6 /* SubclassedAVPlayerViewController.swift in Sources */,
+				CE32F81F2670319300CC41A6 /* AppDelegate.swift in Sources */,
+				CE431D612670400600569539 /* MovieRedirector.swift in Sources */,
+				CE32F8522670330700CC41A6 /* VCProtocol.swift in Sources */,
+				CE32F84D267032AD00CC41A6 /* NicoUtils.swift in Sources */,
+				CE32F84F267032DD00CC41A6 /* NicoVideoWatchingActivity.swift in Sources */,
+				CE32F8212670319300CC41A6 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE32F82D2670319400CC41A6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE32F8362670319400CC41A6 /* SmileTogetherMobileTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE32F8372670319500CC41A6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE32F8402670319500CC41A6 /* SmileTogetherMobileUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -310,6 +557,16 @@
 			target = CE32F7D8266FF77600CC41A6 /* SmileTogether */;
 			targetProxy = CE32F7F4266FF77800CC41A6 /* PBXContainerItemProxy */;
 		};
+		CE32F8332670319400CC41A6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CE32F81B2670319300CC41A6 /* SmileTogetherMobile */;
+			targetProxy = CE32F8322670319400CC41A6 /* PBXContainerItemProxy */;
+		};
+		CE32F83D2670319500CC41A6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CE32F81B2670319300CC41A6 /* SmileTogetherMobile */;
+			targetProxy = CE32F83C2670319500CC41A6 /* PBXContainerItemProxy */;
+		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
@@ -319,6 +576,22 @@
 				CE32F7E3266FF77700CC41A6 /* Base */,
 			);
 			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		CE32F8242670319300CC41A6 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CE32F8252670319300CC41A6 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		CE32F8292670319400CC41A6 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CE32F82A2670319400CC41A6 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -599,6 +872,181 @@
 			};
 			name = Release;
 		};
+		CE32F8422670319500CC41A6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = SmileTogetherMobile/SmileTogetherMobile.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4XKKKM86RN;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SmileTogetherMobile/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = SmileTogether;
+				INFOPLIST_KEY_CFBundleExecutable = SmileTogetherMobile;
+				INFOPLIST_KEY_CFBundleName = SmileTogetherMobile;
+				INFOPLIST_KEY_CFBundleVersion = 1;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = net.rinsuki.apps.SmileTogether;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CE32F8432670319500CC41A6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = SmileTogetherMobile/SmileTogetherMobile.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4XKKKM86RN;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SmileTogetherMobile/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = SmileTogether;
+				INFOPLIST_KEY_CFBundleExecutable = SmileTogetherMobile;
+				INFOPLIST_KEY_CFBundleName = SmileTogetherMobile;
+				INFOPLIST_KEY_CFBundleVersion = 1;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = net.rinsuki.apps.SmileTogether;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CE32F8452670319500CC41A6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4XKKKM86RN;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = net.rinsuki.apps.SmileTogetherMobileTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SmileTogetherMobile.app/SmileTogetherMobile";
+			};
+			name = Debug;
+		};
+		CE32F8462670319500CC41A6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4XKKKM86RN;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = net.rinsuki.apps.SmileTogetherMobileTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SmileTogetherMobile.app/SmileTogetherMobile";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CE32F8482670319500CC41A6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4XKKKM86RN;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = net.rinsuki.apps.SmileTogetherMobileUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SmileTogetherMobile;
+			};
+			name = Debug;
+		};
+		CE32F8492670319500CC41A6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4XKKKM86RN;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = net.rinsuki.apps.SmileTogetherMobileUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SmileTogetherMobile;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -638,6 +1086,33 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		CE32F8412670319500CC41A6 /* Build configuration list for PBXNativeTarget "SmileTogetherMobile" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE32F8422670319500CC41A6 /* Debug */,
+				CE32F8432670319500CC41A6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CE32F8442670319500CC41A6 /* Build configuration list for PBXNativeTarget "SmileTogetherMobileTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE32F8452670319500CC41A6 /* Debug */,
+				CE32F8462670319500CC41A6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CE32F8472670319500CC41A6 /* Build configuration list for PBXNativeTarget "SmileTogetherMobileUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE32F8482670319500CC41A6 /* Debug */,
+				CE32F8492670319500CC41A6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
@@ -669,6 +1144,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = CE32F80F2670199E00CC41A6 /* XCRemoteSwiftPackageReference "Regex" */;
 			productName = Regex;
+		};
+		CE32F8542670333E00CC41A6 /* SwiftyJSON */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CE32F804266FFA5400CC41A6 /* XCRemoteSwiftPackageReference "SwiftyJSON" */;
+			productName = SwiftyJSON;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
